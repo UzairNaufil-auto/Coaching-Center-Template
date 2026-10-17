@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admissions Desk â€” ABC Coaching</title>
+  <meta name="robots" content="noindex" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+
+  <!-- Demo-mode notice shown only when js/config.js is missing (public/portfolio copy) -->
+  <div class="notice" id="notConfigured" hidden>
+    <strong>Demo mode â€” not connected.</strong>
+    This copy has no database keys. To enable the live desk, copy
+    <code>js/config.example.js</code> to <code>js/config.js</code> and add
+    your Supabase keys.
+  </div>
+
+  <!-- ======================= LOGIN ======================= -->
+  <div class="login" id="loginScreen" hidden>
+    <div class="login__card">
+      <span class="topbar__mark">ABC</span>
+      <h1>Admissions desk</h1>
+      <p class="login__sub">Sign in with your staff account to manage registrations and attendance.</p>
+
+      <form id="loginForm" novalidate>
+        <div class="login__field">
+          <label for="loginEmail">Email</label>
+          <input type="email" id="loginEmail" autocomplete="username" required />
+        </div>
+        <div class="login__field">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" autocomplete="current-password" required />
+        </div>
+        <p class="login__error" id="loginError" hidden></p>
+        <button type="submit" class="btn-gold btn-gold--block" id="loginBtn">Sign in</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ======================= APP ======================= -->
+  <div class="app" id="app" hidden>
+    <header class="topbar">
+      <a class="topbar__brand" href="../index.html">
+        <span class="topbar__mark">ABC</span>
+        <span class="topbar__name">Admissions desk</span>
+      </a>
+
+      <nav class="tabs" aria-label="Sections">
+        <button class="tab is-active" data-view="waiting">
+          Waiting list <span class="tab__badge" id="badgeWaiting">0</span>
+        </button>
+        <button class="tab" data-view="enrolled">
+          Enrolled <span class="tab__badge" id="badgeEnrolled">0</span>
+        </button>
+      </nav>
+
+      <div class="topbar__right">
+        <span class="live" id="liveDot" title="Live updates"><i></i> Live</span>
+        <button class="topbar__out" id="signOutBtn" type="button" hidden>Sign out</button>
+      </div>
+    </header>
+
+    <section class="stats" aria-label="Overview">
+      <div class="stat-card">
+        <span class="stat-card__num" id="statWaiting">â€”</span>
+        <span class="stat-card__label">Waiting for confirmation</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card__num" id="statEnrolled">â€”</span>
+        <span class="stat-card__label">Students enrolled</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card__num" id="statToday">â€”</span>
+        <span class="stat-card__label" id="statTodayLabel">Present today</span>
+      </div>
+    </section>
+
+    <main class="content">
+
+      <!-- ---------------- WAITING LIST ---------------- -->
+      <section id="viewWaiting">
+        <div class="view-head">
+          <h2>Waiting list</h2>
+          <p>Registration requests from the website. Confirming a request moves the student into Enrolled.</p>
+        </div>
+
+        <div class="list" id="waitingList">
+          <p class="empty" id="waitingEmpty" hidden></p>
+        </div>
+      </section>
+
+      <!-- ---------------- ENROLLED + ATTENDANCE ---------------- -->
+      <section id="viewEnrolled" hidden>
+        <div class="view-head view-head--row">
+          <div>
+            <h2>Enrolled</h2>
+            <p>Tick a student as present for each of the five working days.</p>
+          </div>
+
+          <div class="week-nav">
+            <button class="week-nav__btn" id="prevWeek" aria-label="Previous week">â€¹</button>
+            <div class="week-nav__label">
+              <span id="weekLabel">â€”</span>
+              <button class="week-nav__today" id="thisWeek" hidden>This week</button>
+            </div>
+            <button class="week-nav__btn" id="nextWeek" aria-label="Next week">â€º</button>
+          </div>
+        </div>
+
+        <div class="toolbar">
+          <input type="search" id="searchInput" placeholder="Search student, class or phoneâ€¦" aria-label="Search students" />
+          <span class="toolbar__count" id="enrolledCount"></span>
+        </div>
+
+        <div class="table-wrap">
+          <table class="attend" id="enrolledTable">
+            <thead id="attendHead"></thead>
+            <tbody id="attendBody"></tbody>
+          </table>
+          <p class="empty" id="enrolledEmpty" hidden></p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="../js/config.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABC Coaching — Coaching for SSC &amp; HSSC · Small Batches</title>
+  <meta name="description" content="ABC Coaching helps secondary and higher-secondary students master the sciences in small batches with daily accountability. Register for a free demo class." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Marks the page as JS-ready so reveal states can hide content.
+       If libraries never load, the class is dropped and everything shows. -->
+  <script>
+    document.documentElement.classList.add("js");
+    window.addEventListener("load", function () {
+      setTimeout(function () {
+        if (!window.__abcReady) document.documentElement.classList.remove("js");
+      }, 2500);
+    });
+  </script>
+</head>
+<body>
+
+  <!-- ======================= NAV ======================= -->
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#top" aria-label="ABC Coaching home">
+      <span class="nav__mark">ABC</span>
+      <span class="nav__name">Coaching</span>
+    </a>
+
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#programs">Programs</a>
+      <a href="#process">How it works</a>
+      <a href="#results">Results</a>
+      <a href="#batches">Batches</a>
+      <a href="#register" class="nav__cta">Register</a>
+    </nav>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+
+    <!-- ======================= HERO ======================= -->
+    <section class="hero">
+      <div class="hero__glyphs" aria-hidden="true">
+        <span data-depth="0.4">∫</span>
+        <span data-depth="0.9">π</span>
+        <span data-depth="0.6">∑</span>
+        <span data-depth="1.2">Δ</span>
+        <span data-depth="0.5">√</span>
+        <span data-depth="0.8">ƒ</span>
+      </div>
+
+      <div class="hero__inner">
+        <p class="hero__meta"><span class="dot"></span> Admissions open · Session 2026–27</p>
+
+        <h1 class="hero__title">
+          <span class="line"><span>Top results are</span></span>
+          <span class="line"><span>built on ordinary</span></span>
+          <span class="line"><span>days.<em class="sweep">Every day.</em></span></span>
+        </h1>
+
+        <div class="hero__rule" aria-hidden="true"></div>
+
+        <div class="hero__foot">
+          <p class="hero__sub">
+            ABC Coaching helps secondary and higher-secondary students master the
+            sciences — in small batches, with attendance marked every single day and
+            teachers who know your name.
+          </p>
+          <div class="hero__actions">
+            <a href="#register" class="btn btn--gold">Register for a demo class</a>
+            <a href="#programs" class="btn btn--ghost">See programs</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <i></i>
+      </div>
+    </section>
+
+    <!-- ======================= MARQUEE ======================= -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" id="marqueeTrack">
+        <span>Physics</span><i>✳</i><span>Chemistry</span><i>✳</i><span>Mathematics</span><i>✳</i>
+        <span>Biology</span><i>✳</i><span>Daily tests</span><i>✳</i><span>Doubt hours</span><i>✳</i>
+        <span>Small batches</span><i>✳</i><span>Parent reports</span><i>✳</i>
+      </div>
+    </div>
+
+    <!-- ======================= PROGRAMS ======================= -->
+    <section class="section programs" id="programs">
+      <div class="section__head">
+        <h2 class="section__title" data-reveal>Three programs.<br />One standard.</h2>
+        <p class="section__lead" data-reveal>
+          Whichever door you come through, the routine is the same: taught concepts,
+          same-day practice, and a test every Saturday.
+        </p>
+      </div>
+
+      <div class="program-grid">
+        <article class="program" data-reveal>
+          <p class="program__tag">SSC I–II · Classes 9–10</p>
+          <h3 class="program__name">Foundation</h3>
+          <p class="program__desc">
+            Board-level foundation for SSC I and SSC II students. Concepts first,
+            speed later — built for students who want the material to last,
+            not just the marks.
+          </p>
+          <ul class="program__facts">
+            <li>5 sessions a week</li>
+            <li>Weekly Saturday test</li>
+            <li>Parent report each month</li>
+          </ul>
+        </article>
+
+        <article class="program" data-reveal>
+          <p class="program__tag">HSSC I–II · Classes 11–12</p>
+          <h3 class="program__name">Senior Science</h3>
+          <p class="program__desc">
+            Pre-Engineering and Pre-Medical streams taught side by side, aligned to
+            the HSSC syllabus so coaching and homework never fight each other.
+          </p>
+          <ul class="program__facts">
+            <li>Board-pattern writing practice</li>
+            <li>Chapter tests + full mocks</li>
+            <li>Separate doubt hour daily</li>
+          </ul>
+        </article>
+
+        <article class="program" data-reveal>
+          <p class="program__tag">HSSC I–II · Revision</p>
+          <h3 class="program__name">Intensive</h3>
+          <p class="program__desc">
+            Two-year and revision batches for students who want a competitive
+            score — in the boards and beyond.
+          </p>
+          <ul class="program__facts">
+            <li>Levelled question banks</li>
+            <li>Board-pattern mock series</li>
+            <li>Rank review with mentor</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======================= PROCESS ======================= -->
+    <section class="section process" id="process">
+      <div class="section__head section__head--split">
+        <h2 class="section__title" data-reveal>From form to first bench<br />in three steps.</h2>
+        <p class="section__lead" data-reveal>
+          No entrance test to register. Walk in, take a demo class, and decide
+          with your eyes open.
+        </p>
+      </div>
+
+      <ol class="steps">
+        <li class="step" data-reveal>
+          <span class="step__num">01</span>
+          <h3>Send the registration</h3>
+          <p>Fill the form below with the student's class and preferred program. Takes under a minute.</p>
+        </li>
+        <li class="step" data-reveal>
+          <span class="step__num">02</span>
+          <h3>Attend a demo class</h3>
+          <p>We call you within 24 hours to schedule a free session in the batch you're considering.</p>
+        </li>
+        <li class="step" data-reveal>
+          <span class="step__num">03</span>
+          <h3>Get placed in a batch</h3>
+          <p>Confirm enrolment, collect the schedule, and start the Monday after orientation.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ======================= RESULTS ======================= -->
+    <section class="results" id="results">
+      <div class="results__inner">
+        <h2 class="results__title" data-reveal>The Class of 2025, in numbers.</h2>
+        <div class="results__grid">
+          <div class="stat" data-reveal>
+            <span class="stat__num" data-count="1400" data-suffix="+">0</span>
+            <span class="stat__label">Students coached</span>
+          </div>
+          <div class="stat" data-reveal>
+            <span class="stat__num" data-count="96" data-suffix="%">0</span>
+            <span class="stat__label">Scored above 85% in boards</span>
+          </div>
+          <div class="stat" data-reveal>
+            <span class="stat__num" data-count="120" data-suffix="+">0</span>
+            <span class="stat__label">Distinction holders in boards</span>
+          </div>
+          <div class="stat" data-reveal>
+            <span class="stat__num" data-count="15" data-prefix="1:">0</span>
+            <span class="stat__label">Teacher-to-student ratio</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= FACULTY ======================= -->
+    <section class="section faculty">
+      <div class="section__head">
+        <h2 class="section__title" data-reveal>Taught by people<br />who stay back.</h2>
+        <p class="section__lead" data-reveal>
+          Four full-time faculty, each handling one subject end to end —
+          no rotating strangers mid-syllabus.
+        </p>
+      </div>
+
+      <div class="faculty__grid">
+        <article class="teacher" data-reveal>
+          <span class="teacher__mono">AM</span>
+          <h3>A. Malik</h3>
+          <p class="teacher__subject">Physics · 14 years</p>
+          <p class="teacher__note">Writes every mock paper himself.</p>
+        </article>
+        <article class="teacher" data-reveal>
+          <span class="teacher__mono">SH</span>
+          <h3>S. Hussain</h3>
+          <p class="teacher__subject">Chemistry · 11 years</p>
+          <p class="teacher__note">Known for finishing Organic Chemistry in half the time.</p>
+        </article>
+        <article class="teacher" data-reveal>
+          <span class="teacher__mono">KA</span>
+          <h3>K. Aslam</h3>
+          <p class="teacher__subject">Mathematics · 16 years</p>
+          <p class="teacher__note">Keeps a doubt log per student, revisits it weekly.</p>
+        </article>
+        <article class="teacher" data-reveal>
+          <span class="teacher__mono">MY</span>
+          <h3>M. Yousaf</h3>
+          <p class="teacher__subject">Biology · 9 years</p>
+          <p class="teacher__note">Diagram-first teaching method.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======================= BATCHES ======================= -->
+    <section class="section batches" id="batches">
+      <div class="section__head">
+        <h2 class="section__title" data-reveal>Weekly schedule.</h2>
+        <p class="section__lead" data-reveal>
+          Attendance is marked every single day — it's how we know when a student
+          is slipping before the marks do.
+        </p>
+      </div>
+
+      <div class="table-wrap" data-reveal>
+        <table class="schedule">
+          <thead>
+            <tr>
+              <th scope="col">Batch</th>
+              <th scope="col">Class</th>
+              <th scope="col">Days</th>
+              <th scope="col">Timing</th>
+              <th scope="col">Seats</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Batch">A — Morning Science</td>
+              <td data-label="Class">HSSC I · Pre-Engineering</td>
+              <td data-label="Days">Mon–Fri</td>
+              <td data-label="Timing">6:30 – 9:30 AM</td>
+              <td data-label="Seats">6 left</td>
+            </tr>
+            <tr>
+              <td data-label="Batch">B — Evening Science</td>
+              <td data-label="Class">HSSC II · Pre-Medical</td>
+              <td data-label="Days">Mon–Fri</td>
+              <td data-label="Timing">4:00 – 7:00 PM</td>
+              <td data-label="Seats">3 left</td>
+            </tr>
+            <tr>
+              <td data-label="Batch">C — Foundation</td>
+              <td data-label="Class">SSC I–II</td>
+              <td data-label="Days">Mon · Wed · Fri</td>
+              <td data-label="Timing">5:00 – 6:30 PM</td>
+              <td data-label="Seats">11 left</td>
+            </tr>
+            <tr>
+              <td data-label="Batch">D — Revision</td>
+              <td data-label="Class">HSSC I–II</td>
+              <td data-label="Days">Mon–Sat</td>
+              <td data-label="Timing">7:00 – 11:00 AM</td>
+              <td data-label="Seats">8 left</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ======================= VOICES ======================= -->
+    <section class="section voices">
+      <div class="voices__grid">
+        <figure class="quote" data-reveal>
+          <blockquote>
+            “The attendance SMS was annoying for exactly one week. Then my son's
+            marks stopped being a surprise.”
+          </blockquote>
+          <figcaption>Farah K. — parent, HSSC II Pre-Medical</figcaption>
+        </figure>
+        <figure class="quote" data-reveal>
+          <blockquote>
+            “I joined the revision batch after a poor first attempt. The Saturday
+            mocks are why I cleared it.”
+          </blockquote>
+          <figcaption>Hammad A. — HSSC 2025 · top scorer, Pre-Medical</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ======================= REGISTER ======================= -->
+    <section class="section register" id="register">
+      <div class="register__pitch">
+        <h2 class="section__title" data-reveal>Send your<br />registration.</h2>
+        <p class="section__lead" data-reveal>
+          Fill this in and your request lands directly in our admissions list.
+          We call every applicant within 24 hours to fix a demo class.
+        </p>
+        <ul class="register__points" data-reveal>
+          <li>No registration fee</li>
+          <li>Demo class is free</li>
+          <li>Batch change allowed in the first two weeks</li>
+        </ul>
+      </div>
+
+      <div class="register__card" data-reveal>
+        <form class="form" id="regForm" novalidate>
+          <div class="form__row">
+            <div class="field">
+              <label for="studentName">Student's full name</label>
+              <input type="text" id="studentName" name="student_name" autocomplete="name" required />
+              <p class="field__error" data-error-for="studentName"></p>
+            </div>
+            <div class="field">
+              <label for="parentName">Parent's name</label>
+              <input type="text" id="parentName" name="parent_name" required />
+              <p class="field__error" data-error-for="parentName"></p>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" inputmode="tel" placeholder="+00 000 0000 000" required />
+              <p class="field__error" data-error-for="phone"></p>
+            </div>
+            <div class="field">
+              <label for="email">Email <span class="field__opt">optional</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" />
+              <p class="field__error" data-error-for="email"></p>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="class">Class</label>
+              <select id="class" name="class" required>
+                <option value="">Select class</option>
+                <option>SSC I (Class 9)</option>
+                <option>SSC II (Class 10)</option>
+                <option>HSSC I (Class 11)</option>
+                <option>HSSC II (Class 12)</option>
+              </select>
+              <p class="field__error" data-error-for="class"></p>
+            </div>
+            <div class="field">
+              <label for="program">Program</label>
+              <select id="program" name="program" required>
+                <option value="">Select program</option>
+                <option>Foundation (SSC I–II)</option>
+                <option>Senior Science (HSSC I–II)</option>
+                <option>Intensive (HSSC I–II)</option>
+              </select>
+              <p class="field__error" data-error-for="program"></p>
+            </div>
+          </div>
+
+          <fieldset class="field field--radio">
+            <legend>Preferred batch</legend>
+            <div class="radios">
+              <label class="radio"><input type="radio" name="batch_pref" value="Morning" checked /><span>Morning</span></label>
+              <label class="radio"><input type="radio" name="batch_pref" value="Evening" /><span>Evening</span></label>
+              <label class="radio"><input type="radio" name="batch_pref" value="Either" /><span>Either</span></label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="message">Anything we should know? <span class="field__opt">optional</span></label>
+            <textarea id="message" name="message" rows="3" placeholder="Current school, grades, goals…"></textarea>
+          </div>
+
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+
+          <button type="submit" class="btn btn--ink btn--block" id="submitBtn">
+            <span class="btn__label">Send registration request</span>
+          </button>
+        </form>
+
+        <div class="form-success" id="formSuccess" hidden>
+          <span class="form-success__mark" aria-hidden="true">✓</span>
+          <h3>You're on the waiting list.</h3>
+          <p>
+            Your registration request has reached the ABC Coaching admissions desk.
+            Expect a call from us within 24 hours.
+          </p>
+          <button class="btn btn--ghost" id="againBtn" type="button">Register another student</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="footer">
+    <div class="footer__top">
+      <a class="nav__brand" href="#top">
+        <span class="nav__mark">ABC</span>
+        <span class="nav__name">Coaching</span>
+      </a>
+      <p class="footer__tag">Small batches. Daily accountability.</p>
+    </div>
+
+    <div class="footer__cols">
+      <div>
+        <h4>Visit</h4>
+        <p>123 Main Street<br />Your City, Your Country</p>
+      </div>
+      <div>
+        <h4>Call</h4>
+        <p><a href="tel:+0000000000">+00 000 0000 000</a><br /><a href="mailto:hello@example.com">hello@example.com</a></p>
+      </div>
+      <div>
+        <h4>Office hours</h4>
+        <p>Mon – Sat · 9:00 AM – 8:00 PM<br />Sunday · Closed</p>
+      </div>
+    </div>
+
+    <div class="footer__base">
+      <span>© 2026 ABC Coaching</span>
+      <span>Admissions open · Session 2026–27</span>
+    </div>
+  </footer>
+
+  <!-- Libraries -->
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script defer src="js/config.js"></script>
+  <script defer src="js/main.js"></script>
+</body>
+</html>
